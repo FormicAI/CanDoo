@@ -19,7 +19,7 @@ module.exports = {
       secondary: '#d6b36c',
       'body-color': '#003366',
       'gradient-1': '#003366',
-      'gradient-2': '#ced2e0',
+      'gradient-2': '#e7edef',
     },
     screens: {
       sm: '540px',
