@@ -1,0 +1,50 @@
+1.5.0 - Beta
+----- <br>
+
+- Improved backend conversational model.<br>
+- Added multi-scroll feature: user can view multiple source paragraphs for a given answer.<br>
+- Minor improvements on search functionality to maintain states between searches.
+<br><br>
+1.4.1 
+-----<br>
+
+- Introduced conversational feature on the side panel.<br>
+- Added functionality to scroll to the main paragraph when the LLM answers.
+<br><br>
+
+1.3.5
+-----<br>
+
+- Can add new words and phrases to a previously queried input and we will process them while keeping the previously-processed items intact.<br>
+- Added ~1000 common legal phrases to our dictionary.<br>
+- Better search capturing. <br>
+- Refactored code to speed up backend.<br>
+- Minor bug fixes.
+<br><br>
+1.2.2
+-----<br>
+
+- Introduced logging and registration.<br>
+- Pushed UI changes on logging, registration, email templates and CanDoo plugin pop-up.<br>
+- Removed false-positive detections of structured statements.<br>
+- Removed "on" and "to" from mapping to "Ontario" jurisdiction.<br>
+- Made logic improvements to handle stopwords better.<br>
+- Autodetects very few legal phrases but extracts and maintains them.
+<br><br>
+
+1.1.0
+-----<br>
+
+- Introduced a centralized service to synchronize activies, enabling us to add/expand features without breaking anything.<br>
+- Pointed plugin to a new endpoint.<br>
+<br><br>
+
+1.0.0 - First upload
+-----<br>
+
+- Conversion of keyword search text into structured query with synonyms.<br>
+- Extracts absolute date(s) and range(s).<br>
+- Extracts a few canadian locations and populates the jurisdiction field.<br>
+- Extracts cue words to change tabs accordingly.<br>
+- Display a new CanDoo gold button on CanLII search bar.<br>
+- Send and receive request from our backend server, populate document text field, and run CanLII grey search button.
