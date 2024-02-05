@@ -21,9 +21,9 @@ window.wow.init({
 
 //========= glightbox
 GLightbox({
-  href: "https://www.loom.com/embed/01bf769c8335488fbe88e4fa949d6195?sid=85f45215-456c-4694-b2ee-442cd482ea43",
+  href: "https://www.youtube.com/embed/q-DvRq_U6OQ",
   // type: "video",
-  // source: "youtube", //vimeo, youtube or local
+  source: "youtube", //vimeo, youtube or local
   width: 900,
   autoplayVideos: true,
 });
