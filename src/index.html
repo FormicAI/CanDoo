@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!-- 
+  npm run build 
+  npm run deploy
+
+-->
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -120,7 +126,7 @@
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
                       class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
                     >
-                      Search
+                      Auto-Memo
                     </a>
                   </li>
                   
@@ -135,6 +141,15 @@
                   </li>
                   <li>
                     <a
+                      href="#about3"
+                      :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
+                      class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
+                    >
+                      PDF-Chat
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="#faq"
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
                       class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
@@ -145,6 +160,7 @@
                   <li>
                     <a
                       href="Contact.html"
+                      target="_blank"
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
                       class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
                     >
@@ -154,6 +170,7 @@
                   <li>
                     <a
                       href="pricing.html"
+                      target="_blank"
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
                       class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
                     >
@@ -449,8 +466,8 @@
     </section>
     <!-- ===== Hero end ===== -->
 
-    <!-- ===== About start ===== -->
-    <section id="about" class="pt-[100px]">
+    <!-- ===== About (Enhanced Search) start ===== -->
+    <!-- <section id="about" class="pt-[100px]">
       <div class="container" >
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-1/2 px-4">
@@ -511,10 +528,80 @@
           </div>
         </div>
       </div>
+    </section> -->
+    <!-- ===== About end ===== -->
+
+    <!-- ===== About (Auto Memo) start ===== -->
+    <section id="about" class="pt-[100px]">
+      <div class="container" >
+        <div class="flex flex-wrap items-center -mx-4">
+          <div class="w-full lg:w-1/2 px-4">
+            <div
+              class="text-center mb-14 lg:mb-0 wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <img
+                src="images/about/1MemoGif.gif"
+                alt="CanDoo Search Demo"
+                class="max-full"
+                Style="border-radius: 5px;  border: 1px solid #003366; box-shadow: rgba(0, 0, 0, 0.4) 15px 10px 15px;"
+              />
+            </div>
+          </div>
+          <div class="w-full lg:w-1/2 px-4">
+            <div
+              class="max-w-[485px] lg:ml-auto wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <span
+                class="font-bold text-base text-primary dark:text-gradient-2 block mb-2"
+              >
+                Automated Case Memos
+              </span>
+              <span
+                class="font-italic text-base text-primary dark:text-gradient-2 block mb-2" style="font-style:italic;"
+              >
+                <!-- (coming soon) -->
+              </span>
+              <h2
+                class="font-extrabold text-3xl sm:text-4xl leading-tight text-black dark:text-white mb-6"
+              >
+                Skip the note-taking, stick to giving expert opinions
+              </h2>
+              <p
+                class="text-lg leading-relaxed text-body-color dark:text-gradient-2 mb-12 lg:mb-16"
+              >
+              Use CanDoo to extract all the relevant facts of the case and 
+              automate the process of drafting an easy to read, yet detailed 
+              research brief with citations. 
+              </p>
+              <a
+                href="#faq"
+                class="inline-flex items-center font-bold text-base text-primary dark:text-secondary hover:underline"
+              >
+                Learn more
+
+                <span class="pl-2">
+                  <svg
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    class="fill-current"
+                  >
+                    <path
+                      d="M16.3333 19.7633V15.0967H5.92666L5.89166 12.7517H16.3333V8.09668L22.1667 13.93L16.3333 19.7633Z"
+                    />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ===== About end ===== -->
 
-    <!-- ===== About start ===== -->
+    <!-- ===== About  (Case-Chat Search) start ===== -->
     <section id="about2" class="pt-14">
       <div class="container">
         <div class="flex flex-wrap items-center -mx-4">
@@ -524,7 +611,7 @@
               data-wow-delay=".2s"
             >
               <img
-                src="images/about/converse.gif"
+                src="images/about/2ChatGif.gif"
                 alt="CanDoo Conversational Demo"
                 class="max-full"
                 style="border-radius: 5px;  border: 1px solid #003366; box-shadow: rgba(0, 0, 0, 0.4) 15px 10px 15px;"
@@ -547,7 +634,7 @@
                 class="text-lg leading-relaxed text-body-color dark:text-gradient-2 mb-12 lg:mb-16"
               >
                 Let CanDoo dig into the document to save you time. 
-                Ask it to write you a Research Memo or to summarize the case. 
+                Ask it to write you an email about the judgement or to summarize the case. 
                 Whatever you need to move fast.
               </p>
               <a
@@ -576,8 +663,8 @@
     </section>
     <!-- ===== About end ===== -->
 
-    <!-- ===== About start ===== -->
-    <!-- <section id="about" class="pt-[100px]">
+    <!-- ===== About (PDF Chat) start ===== -->
+    <section id="about3" class="pt-[100px]">
       <div class="container" >
         <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full lg:w-1/2 px-4">
@@ -586,7 +673,7 @@
               data-wow-delay=".2s"
             >
               <img
-                src="images/about/search-v2.gif"
+                src="images/about/PDFUpload.jpg"
                 alt="CanDoo Search Demo"
                 class="max-full"
                 Style="border-radius: 5px;  border: 1px solid #003366; box-shadow: rgba(0, 0, 0, 0.4) 15px 10px 15px;"
@@ -601,7 +688,7 @@
               <span
                 class="font-bold text-base text-primary dark:text-gradient-2 block mb-2"
               >
-                Automated Case Analysis
+                PDF Upload
               </span>
               <span
                 class="font-italic text-base text-primary dark:text-gradient-2 block mb-2" style="font-style:italic;"
@@ -611,14 +698,14 @@
               <h2
                 class="font-extrabold text-3xl sm:text-4xl leading-tight text-black dark:text-white mb-6"
               >
-                Skip the note-taking, stick to giving expert opinions
+                Work with your own data, in your own way
               </h2>
               <p
                 class="text-lg leading-relaxed text-body-color dark:text-gradient-2 mb-12 lg:mb-16"
               >
-              Use CanDoo to extract all the relevant facts of the case and 
-              automate the process of drafting an easy to read, yet detailed 
-              research brief with citations. 
+              Use the secure and private CanDoo AI engine to analyze any sort of PDF document.
+              Summarize your client communications, search through long-length claims, edit 
+              court documentation, and more!
               </p>
               <a
                 href="#faq"
@@ -643,7 +730,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- ===== About end ===== -->
     
     <!-- ===== Call to Action start ===== -->
@@ -1478,10 +1565,26 @@
                   </li>
                   <li>
                     <a
-                      href="disclaimer.html"
+                      href="disclaimer.txt"
                       target="_blank"
                       class="font-semibold text-base text-body-color hover:text-secondary dark:text-gradient-2 dark:hover:text-secondary inline-block"                    >
                       Disclaimer
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="../PrivacyPolicy.pdf"
+                      target="_blank"
+                      class="font-semibold text-base text-body-color hover:text-secondary dark:text-gradient-2 dark:hover:text-secondary inline-block"                    >
+                      Privacy Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="../TermsAndConditions.pdf"
+                      target="_blank"
+                      class="font-semibold text-base text-body-color hover:text-secondary dark:text-gradient-2 dark:hover:text-secondary inline-block"                    >
+                      Website Terms & Conditions
                     </a>
                   </li>
                 </ul>
