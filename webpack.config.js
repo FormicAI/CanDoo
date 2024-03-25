@@ -19,6 +19,7 @@ const processNestedHtml = (content, loaderContext, dir = null) =>
 
 // HTML generation
 const paths = [];
+const CopyWebpackPlugin = require('copy-webpack-plugin'); //with the rule and the plugin
 const generateHTMLPlugins = () => glob.sync('./src/*.html').map((dir) => {
   const filename = path.basename(dir);
 
@@ -44,6 +45,7 @@ module.exports = {
     compress: true,
     port: 3000,
   },
+
   module: {
     rules: [
       {
@@ -56,6 +58,17 @@ module.exports = {
           },
         },
       },
+      
+      
+
+
+      // testing a file-loader for the webpack, doesn't seem to do anything
+    //   {
+    //      test: /\.pdf$/i,
+    //      use: 'file-loader',
+    // },
+
+
       {
         test: /\.css$/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
@@ -68,6 +81,7 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
       },
+
       {
         test: /\.html$/,
         loader: 'html-loader',
@@ -83,6 +97,15 @@ module.exports = {
       filename: 'style.css',
       chunkFilename: 'style.css',
     }),
+
+  // with the rule and the const. This seems to bring the pdfs into the build folder. But they have extra "."'s
+    new CopyWebpackPlugin({
+        patterns: [
+            { from: 'src/**/*.pdf', to: '[name][ext]' },
+        ],
+    }),
+  
+
   ],
   output: {
     filename: 'bundle.js',
