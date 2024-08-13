@@ -2,7 +2,7 @@
   "name": "App Tailwind",
   "version": "1.0.0",
   "description": "",
-  "homepage": "hhttps://github.com/FormicAI/CanDoo.git",
+  "homepage": "https://github.com/FormicAI/CanDoo.git",
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
