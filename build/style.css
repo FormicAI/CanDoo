@@ -904,6 +904,9 @@ body{
 .inline-flex{
   display: inline-flex;
 }
+.table{
+  display: table;
+}
 .hidden{
   display: none;
 }
@@ -958,14 +961,20 @@ body{
 .h-\[550px\]{
   height: 550px;
 }
-.h-\[40px\]{
-  height: 40px;
-}
 .h-7{
   height: 1.75rem;
 }
 .h-4{
   height: 1rem;
+}
+.h-\[620px\]{
+  height: 620px;
+}
+.h-\[150px\]{
+  height: 150px;
+}
+.h-\[575px\]{
+  height: 575px;
 }
 .w-full{
   width: 100%;
@@ -1050,9 +1059,6 @@ body{
 }
 .max-w-\[130px\]{
   max-width: 130px;
-}
-.max-w-\[40px\]{
-  max-width: 40px;
 }
 .max-w-\[570px\]{
   max-width: 570px;
@@ -1384,10 +1390,6 @@ body{
   padding-left: 18px;
   padding-right: 18px;
 }
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
 .pr-16{
   padding-right: 4rem;
 }
@@ -1666,13 +1668,13 @@ body{
   --tw-text-opacity: 1;
   color: rgb(214 179 108 / var(--tw-text-opacity));
 }
-.hover\:text-white:hover{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(0 51 102 / var(--tw-text-opacity));
+}
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .hover\:underline:hover{
   -webkit-text-decoration-line: underline;
@@ -1709,13 +1711,13 @@ body{
 .group:hover .group-hover\:bg-opacity-100{
   --tw-bg-opacity: 1;
 }
-.group:hover .group-hover\:text-secondary{
-  --tw-text-opacity: 1;
-  color: rgb(214 179 108 / var(--tw-text-opacity));
-}
 .group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
   color: rgb(0 51 102 / var(--tw-text-opacity));
+}
+.group:hover .group-hover\:text-secondary{
+  --tw-text-opacity: 1;
+  color: rgb(214 179 108 / var(--tw-text-opacity));
 }
 .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
@@ -1783,11 +1785,11 @@ body{
 .dark .dark\:to-black{
   --tw-gradient-to: #07102D;
 }
-.dark .dark\:fill-gradient-2{
-  fill: #e7edef;
-}
 .dark .dark\:fill-white{
   fill: #FFFFFF;
+}
+.dark .dark\:fill-gradient-2{
+  fill: #e7edef;
 }
 .dark .dark\:text-white{
   --tw-text-opacity: 1;
@@ -1976,6 +1978,10 @@ body{
     height: 2.5rem;
   }
 
+  .md\:h-\[500px\]{
+    height: 500px;
+  }
+
   .md\:w-14{
     width: 3.5rem;
   }
@@ -2156,6 +2162,10 @@ body{
 
   .lg\:w-8\/12{
     width: 66.666667%;
+  }
+
+  .lg\:w-1\/4{
+    width: 25%;
   }
 
   .lg\:max-w-full{

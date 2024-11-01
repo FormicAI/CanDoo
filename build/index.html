@@ -123,33 +123,40 @@
                       Features
                     </a>
                   </li> -->
-                  <li>
+                  <li class="relative group submenu-item">
                     <a
-                      href="#about"
+                      href="#about1"
+                      @click="dropdownOpen = !dropdownOpen"
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
-                      class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
+                      class="text-base text-body-color group-hover:text-primary lg:inline-flex lg:pl-0 lg:pr-4 flex lg:ml-10 xl:ml-12 relative after:absolute after:w-2 after:h-2 after:border-b-2 after:border-r-2 after:border-current after:rotate-45 lg:after:right-0 after:right-1 after:top-1/2 after:translate-y-[-50%] after:mt-[-2px]"
                     >
-                      Auto-Memo
+                      Features
                     </a>
-                  </li>
-                  
-                  <li>
-                    <a
-                      href="#about2"
-                      :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
-                      class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
+                    <div
+                      :class="dropdownOpen ? 'block' : 'hidden lg:block ' "
+                      class="submenu relative lg:absolute lg:w-[250px] top-full lg:top-[115%] left-0 rounded-lg lg:shadow-lg lg:p-4 lg:opacity-0 lg:invisible group-hover:opacity-100 lg:group-hover:visible lg:group-hover:top-full bg-white dark:bg-black transition-[top] duration-300"
                     >
-                      Case-Chat
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#about3"
-                      :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
-                      class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
-                    >
-                      PDF-Chat
-                    </a>
+                      <a
+                        href="#about1"
+                        class="block text-sm text-black dark:text-white dark:hover:text-primary rounded hover:text-primary py-[10px] lg:px-4"
+                      >
+                        Auto-Memo
+                      </a>
+
+                      <a
+                        href="#about2"
+                        class="block text-sm text-black dark:text-white dark:hover:text-primary rounded hover:text-primary py-[10px] lg:px-4"
+                      >
+                        Case-Chat
+                      </a>
+
+                      <a
+                        href="#about3"
+                        class="block text-sm text-black dark:text-white dark:hover:text-primary rounded hover:text-primary py-[10px] lg:px-4"
+                      >
+                        PDF-Chat
+                      </a>
+                    </div>
                   </li>
                   <li>
                     <a
@@ -162,8 +169,25 @@
                   </li>
                   <li>
                     <a
+                      href="blog-grid.html"
+                      :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
+                      class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
+                    >
+                      Blog
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="docs-grid.html"
+                      :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
+                      class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
+                    >
+                      Docs
+                    </a>
+                  </li>
+                  <li>
+                    <a
                       href="Contact.html"
-                      target="_blank"
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
                       class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
                     >
@@ -173,13 +197,13 @@
                   <li>
                     <a
                       href="pricing.html"
-                      target="_blank"
                       :class="scrolledFromTop ? 'py-2 lg:py-6' : 'py-2 lg:py-8' "
                       class="scroll-menu text-base font-medium  dark:text-white dark:hover:text-secondary text-body-color hover:text-secondary lg:inline-flex flex lg:ml-8 xl:ml-12"
                     >
                       Pricing
                     </a>
                   </li>
+                  
                   <!-- <li class="relative group submenu-item">
                     <a
                       href="javascript:void(0)"
@@ -308,7 +332,7 @@
                 </p>
                 <div class="flex items-center">
                   <a
-                    href="#about"
+                    href="#about1"
                     class="text-base font-bold text-white bg-primary rounded-xl py-4 px-10 transition-all hover:shadow-primary-hover dark:hover:bg-secondary mr-9"
                   >
                     Explore
@@ -818,7 +842,7 @@
                 <p
                   class="font-bold text-lg leading-relaxed text-body-color dark:text-gradient-2 mb-10"
                 >
-                  CanDoo is currently only available in the Chrome Webstore, with plans to expand in coming months.
+                  CanDoo works best with chromium-based browsers.
                 </p>
                 
               </div>
@@ -2068,7 +2092,7 @@
                 <h3
                   class="font-bold text-xl sm:text-2xl lg:text-xl xl:text-2xl text-black dark:text-white mb-4"
                 >
-                  What makes CanDoo answers so reliable?
+                  What makes CanDoo answers reliable?
                 </h3>
                 <p class="font-semibold text-base text-body-color dark:text-gradient-2">
                   It is our mission to create fully-trustable AI systems for Legal professionals. 
@@ -2086,7 +2110,7 @@
                 </h3>
                 <p class="font-semibold text-base text-body-color dark:text-gradient-2">
                   CanDoo is currently in beta phase and is free to use for now. We plan to keep certain features free to promote AI-based legal tools. 
-                  We plan to have multiple offerings, ranging from improving your CanLII experience to law-firm focused offerings to specialize their own Case-Chats.
+                  We plan to have multiple offerings, ranging from improving your CanLII experience to teaming up with law firms to specialize CanDoo.AI privately.
                 </p>
               </div>
               <div>
